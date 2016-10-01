@@ -1,0 +1,14 @@
+<view>
+    <view class="hd" style="background-image:url({{topic.image}});">
+        <view class="mask"></view>
+        <view class="title">{{topic.title}}</view>
+        <view class="image-source">{{topic.image_source}}</view>
+    </view>
+</view>
+
+<view class="wrap">
+    <view class="bd">
+        <view class="title">Opoos! 小程序目前未提供解析 HTML 的方法，所以没办法展示</view>
+        <!--{{topic.body}}-->
+    </view>
+</view>

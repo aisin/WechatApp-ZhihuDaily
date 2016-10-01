@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/themes/themes",
+    "pages/lists/lists"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3cc51f",
+    "navigationBarTitleText": "知乎日报",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "日报首页"
+    }, {
+      "pagePath": "pages/themes/themes",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "主题日报"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFiel": 10000
+  },
+  "debug": false
+}

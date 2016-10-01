@@ -1,0 +1,13 @@
+<view class="wrap">
+    <block wx:for-items="{{themes}}">
+        <navigator url="../lists/lists?id={{item.id}}">
+        <view class="theme">
+            <image class="pic" src="{{item.thumbnail}}"/>
+            <view class="txt">
+                <view class="title">{{item.name}}</view>
+                <view class="desc">{{item.description}}</view>
+            </view>
+        </view>
+        </navigator>
+    </block>
+</view>

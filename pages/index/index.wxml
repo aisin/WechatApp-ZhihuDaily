@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="hot-stories">
+        <view class="section section_gap swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for-items="{{top_stories}}">
+                    <swiper-item data-id="{{item.id}}">
+                        <navigator url="../detail/detail?id={{item.id}}">
+                            <view class="swiper-item" style="background-image:url('{{item.image}}');">
+                                <view class="mask"></view>
+                                <text class="title">{{item.title}}</text>
+                            </view>
+                        </navigator>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+
+    <view class="wrap">
+        <view class="name">今日要闻</view>
+    </view>
+
+    <view class="wrap">
+        <block wx:for-items="{{stories}}">
+            <navigator url="../detail/detail?id={{item.id}}">
+                <view class="story" data-id="{{item.id}}">
+                    <image class="pic" src="{{item.images[0]}}"/>
+                    <text class="title">{{item.title}}</text>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

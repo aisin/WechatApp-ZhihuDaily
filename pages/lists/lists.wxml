@@ -1,0 +1,12 @@
+<view class="wrap">
+    <block wx:for-items="{{stories}}">
+        <navigator url="../detail/detail?id={{item.id}}">
+        <view class="topic">
+            <image wx:if="{{item.images}}" class="pic" src="{{item.images[0]}}"/>
+            <view class="txt">
+                <view class="title">{{item.title}}</view>
+            </view>
+        </view>
+        </navigator>
+    </block>
+</view>

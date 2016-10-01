@@ -1,0 +1,28 @@
+.topic{
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    margin: 15px 0;
+    padding: 8px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.topic .pic{
+    width: 80px;
+    height: 80px;
+}
+
+.topic .txt{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 1.5em;
+}
